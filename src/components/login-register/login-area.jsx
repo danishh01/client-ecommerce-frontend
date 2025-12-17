@@ -36,7 +36,7 @@ const LoginArea = () => {
                     or Sign in with <a href="#">Email</a>
                   </p>
                   <p className="text-sm text-gray-600 mt-2">
-                    Didn't receive verification email?{" "}
+                    Didn&apos;t receive verification email?{" "}
                     <a href="/forgot" className="text-blue-600 hover:underline">
                       Resend verification
                     </a>

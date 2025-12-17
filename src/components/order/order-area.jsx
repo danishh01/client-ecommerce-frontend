@@ -42,7 +42,7 @@ const OrderArea = ({ orderId }) => {
                       <div className="row align-items-end">
                         <div className="col-md-4 col-sm-6">
                           <div className="invoice__left">
-                            <img src="/assets/img/logo/logo.jpeg" alt="logo" style={{maxWidth: '100px', height: 'auto'}} />
+                            <Image src="/assets/img/logo/logo.jpeg" alt="logo" width={100} height={100} style={{objectFit: 'contain'}} />
                             <p>2879 Elk Creek Road <br /> Stone Mountain, Georgia </p>
                           </div>
                         </div>

@@ -19,7 +19,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <div className="tp-footer-widget-content">
                     <div className="tp-footer-logo">
                       <Link href="/">
-                        <img src="/assets/img/logo/logo.jpeg" alt="logo" style={{maxWidth: '150px', height: 'auto'}} />
+                        <Image src="/assets/img/logo/logo.jpeg" alt="logo" width={150} height={150} style={{objectFit: 'contain'}} />
                       </Link>
                     </div>
                     <p className="tp-footer-desc">We are a team of designers</p>

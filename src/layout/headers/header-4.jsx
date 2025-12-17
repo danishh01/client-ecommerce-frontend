@@ -33,8 +33,8 @@ const HeaderFour = () => {
                 <div className="col-xl-2 col-lg-2 col-6">
                   <div className="logo">
                     <Link href="/">
-                      <img className="logo-light" src="/assets/img/logo/logo-white.jpeg" alt="logo" style={{maxWidth: '120px', height: 'auto'}} />
-                      <img className="logo-dark" src="/assets/img/logo/logo.jpeg" alt="logo" style={{maxWidth: '120px', height: 'auto'}} />
+                      <Image className="logo-light" src="/assets/img/logo/logo-white.jpeg" alt="logo" width={120} height={120} style={{objectFit: 'contain'}} />
+                      <Image className="logo-dark" src="/assets/img/logo/logo.jpeg" alt="logo" width={120} height={120} style={{objectFit: 'contain'}} />
                     </Link>
                   </div>
                 </div>
@@ -67,12 +67,12 @@ const HeaderFour = () => {
                             {user?.name ? (
                               <Link href="/profile" className="tp-header-login-icon-btn">
                                 {user?.imageURL ? (
-                                  <img
+                                  <Image
                                     src={user.imageURL}
                                     alt="user img"
+                                    width={35}
+                                    height={35}
                                     style={{
-                                      width: '35px',
-                                      height: '35px',
                                       borderRadius: '50%'
                                     }}
                                   />

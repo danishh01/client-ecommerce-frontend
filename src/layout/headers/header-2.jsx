@@ -36,7 +36,7 @@ const HeaderTwo = ({ style_2 = false }) => {
                   <div className="col-xl-2 col-lg-5 col-md-5 col-sm-4 col-6">
             <div className="logo">
               <Link href="/">
-                <img src="/assets/img/logo/logo.jpeg" alt="logo" style={{maxWidth: '120px', height: 'auto'}} />
+                <Image src="/assets/img/logo/logo.jpeg" alt="logo" width={120} height={120} style={{objectFit: 'contain'}} />
               </Link>
             </div>
                   </div>
@@ -81,12 +81,12 @@ const HeaderTwo = ({ style_2 = false }) => {
                                 {user?.name ? (
                                   <Link href="/profile" className="tp-header-login-icon-btn">
                                     {user?.imageURL ? (
-                                      <img
+                                      <Image
                                         src={user.imageURL}
                                         alt="user img"
+                                        width={35}
+                                        height={35}
                                         style={{
-                                          width: '35px',
-                                          height: '35px',
                                           borderRadius: '50%'
                                         }}
                                       />

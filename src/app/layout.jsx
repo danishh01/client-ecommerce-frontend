@@ -1,5 +1,6 @@
 import './globals.scss';
 import {Jost, Roboto,Charm,Oregano} from 'next/font/google';
+import Script from 'next/script';
 import Providers from '@/components/provider';
 
 export const metadata = {
@@ -47,7 +48,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="beforeInteractive" />
       </head>
       <body className={`${body.variable} ${heading.variable} ${p.variable} ${jost.variable} ${roboto.variable} ${oregano.variable} ${charm.variable}`}>
         <Providers>

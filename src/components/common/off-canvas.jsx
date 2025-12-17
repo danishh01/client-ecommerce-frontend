@@ -19,7 +19,7 @@ const OffCanvas = ({ isOffCanvasOpen, setIsCanvasOpen }) => {
             <div className="offcanvas__top mb-70 d-flex justify-content-between align-items-center">
               <div className="offcanvas__logo logo">
                 <Link href="/">
-                  <img src="/assets/img/logo/logo.jpeg" alt="logo" style={{maxWidth: '100px', height: 'auto'}} />
+                  <Image src="/assets/img/logo/logo.jpeg" alt="logo" width={100} height={100} style={{objectFit: 'contain'}} />
                 </Link>
               </div>
             </div>
